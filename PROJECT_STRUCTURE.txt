@@ -1,0 +1,107 @@
+📁 Codeflare Software Portfolio - Proje Yapısı
+================================================
+
+📄 HTML Dosyaları:
+├── index.html              ⭐ Ana sayfa (Ana Sayfa, Hakkımda, Projeler, İletişim)
+├── privacy.html            📋 Gizlilik Politikası (TR/EN)
+├── terms.html              📋 Kullanıcı Sözleşmesi (TR/EN)
+└── delete-account.html     📋 Hesap Silme Sayfası (TR/EN)
+
+🎨 Stil Dosyaları:
+└── styles.css              🎨 Tüm tasarım ve animasyonlar
+
+⚙️ JavaScript Dosyaları:
+└── script.js               🔧 Dil değiştirme, proje detayları, interaktivite
+
+📸 Resim Dosyaları (Eklenecek):
+├── profile.jpg             👤 Profil fotoğrafı (200x200px)
+├── project1.jpg            📷 Biocard proje resmi
+├── project2.jpg            📷 Flutter proje resmi
+└── project3.jpg            📷 Android proje resmi
+
+📚 Dokümantasyon:
+├── README.md               📖 Proje açıklaması
+├── SETUP.md                🔧 Kurulum rehberi
+├── DEPLOYMENT.md           🚀 GitHub Pages yayınlama
+└── PROJECT_STRUCTURE.txt   📋 Bu dosya
+
+⚙️ Konfigürasyon:
+├── .gitignore              🚫 Git ignore kuralları
+├── CNAME.example           �� Custom domain şablonu
+└── .vscode/                💻 VS Code ayarları (isteğe bağlı)
+
+================================================
+
+🎯 ÖZELLİKLER:
+
+✨ Tasarım:
+- Modern ve animasyonlu UI
+- Gradient ve glow efektleri
+- Floating shapes animasyonları
+- Smooth scroll ve transitions
+- Responsive tasarım (mobil uyumlu)
+
+🌍 Dil Desteği:
+- Türkçe (TR) - Varsayılan
+- İngilizce (EN)
+- LocalStorage ile dil tercihini kaydet
+
+📱 Sayfalar:
+1. Ana Sayfa (Hero Section)
+   - Profil resmi
+   - Biyografi
+   - CTA butonları
+
+2. Hakkımda
+   - Eğitim bilgisi
+   - Çalışma deneyimi
+   - Kariyer hedefleri
+
+3. Projeler
+   - 3 proje kartı
+   - Hover efektleri
+   - Modal detay sayfası
+
+4. Proje Detayları (Modal)
+   - Proje resmi
+   - Açıklama
+   - Özellikler listesi
+   - Kullanılan teknolojiler
+   - Market linki
+
+5. İletişim
+   - GitHub linki
+   - LinkedIn linki
+   - E-Mail linki
+
+6. Yasal Sayfalar
+   - Gizlilik Politikası
+   - Kullanıcı Sözleşmesi
+   - Hesap Silme
+
+================================================
+
+🚀 BAŞLANGICI:
+
+1. Resim dosyalarını ekleyin
+2. script.js'de bilgileri güncelleyin
+3. GitHub'a push edin
+4. GitHub Pages ayarlarını yapın
+5. Custom domain ekleyin (isteğe bağlı)
+
+================================================
+
+📊 Dosya Boyutları:
+- index.html: ~8 KB
+- styles.css: ~15 KB
+- script.js: ~12 KB
+- Diğer HTML: ~6 KB
+- Toplam (resimler hariç): ~41 KB
+
+⚡ Performans:
+- Statik HTML/CSS (hızlı yükleme)
+- Vanilla JavaScript (bağımlılık yok)
+- Responsive tasarım
+- SEO uyumlu
+
+================================================

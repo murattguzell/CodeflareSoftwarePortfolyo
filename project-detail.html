@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Detayı - Codeflare Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="profile_resim/codeflare_logo.png" alt="Codeflare Software" class="logo-image">
+                <span class="logo-text">Codeflare Software</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="index.html#projects" class="nav-link" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail-page">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← <span data-tr="Projelere Dön" data-en="Back to Projects">Projelere Dön</span></a>
+            
+            <div class="project-detail-container">
+                <div class="project-header">
+                    <img id="detailIcon" src="" alt="Proje İkonu" class="detail-icon">
+                    <div class="project-info">
+                        <h1 id="detailTitle"></h1>
+                        <p id="detailDescription"></p>
+                    </div>
+                </div>
+                
+                <div class="screenshots-section">
+                    <h2><span class="icon">📱</span> <span id="screenshotsTitle" data-tr="Ekran Görüntüleri" data-en="Screenshots">Ekran Görüntüleri</span></h2>
+                    <div id="screenshotsContainer" class="screenshots-container"></div>
+                </div>
+                
+                <div class="detail-section">
+                    <h2><span class="icon">⭐</span> <span id="featuresTitle" data-tr="Özellikler" data-en="Features">Özellikler</span></h2>
+                    <ul id="detailFeatures"></ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h2><span class="icon">🛠️</span> <span id="technologiesTitle" data-tr="Kullanılan Teknolojiler" data-en="Technologies Used">Kullanılan Teknolojiler</span></h2>
+                    <div id="detailTech" class="tech-tags"></div>
+                </div>
+                
+                <div class="detail-section">
+                    <h2><span class="icon">🔗</span> <span id="marketLinkTitle" data-tr="Market Linki" data-en="Market Link">Market Linki</span></h2>
+                    <div class="app-links">
+                        <a id="detailLink" href="#" target="_blank" class="btn btn-primary">
+                            <span class="btn-icon">📱</span>
+                            <span id="openAppText" data-tr="Uygulamayı Aç" data-en="Open App">Uygulamayı Aç</span>
+                        </a>
+                        <div id="appStoreLinks" class="store-links" style="display: none;">
+                            <a id="appStoreLink" href="#" target="_blank" class="btn btn-secondary">
+                                <span class="btn-icon">🍎</span>
+                                <span id="appStoreText">App Store'dan İndir</span>
+                            </a>
+                        </div>
+                        <div id="nightlinkLinks" class="legal-links" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot Lightbox -->
+    <div id="screenshotLightbox" class="screenshot-lightbox">
+        <div class="lightbox-container">
+            <span class="lightbox-close" onclick="closeScreenshotLightbox()">&times;</span>
+            <img id="lightboxImage" src="" alt="Ekran görüntüsü">
+            <div class="lightbox-nav">
+                <button class="lightbox-btn lightbox-prev" onclick="previousScreenshot()">❮</button>
+                <button class="lightbox-btn lightbox-next" onclick="nextScreenshot()">❯</button>
+            </div>
+            <div class="lightbox-counter">
+                <span id="lightboxCounter">1 / 8</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-tr="© 2026 Codeflare Software. Tüm hakları saklıdır." data-en="© 2026 Codeflare Software. All rights reserved.">© 2026 Codeflare Software. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="project-detail.js"></script>
+</body>
+</html>

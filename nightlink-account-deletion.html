@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightLink - Hesap Silme | Account Deletion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="profile_resim/codeflare_logo.png" alt="Codeflare Software" class="logo-image">
+                <span class="logo-text">Codeflare Software</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="index.html#projects" class="nav-link" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Account Deletion Section -->
+    <section class="legal-page">
+        <div class="legal-content">
+            <a href="project-detail.html?id=0" class="back-link">← <span data-tr="Nightlink'e Dön" data-en="Back to Nightlink">Nightlink'e Dön</span></a>
+            
+            <!-- Turkish Content -->
+            <div id="turkish-content" class="content-section">
+                <h1>Hesap Silme ve Veri Silme Talebi</h1>
+                <p>NightLink uygulamasından hesabınızı dilediğiniz zaman silebilirsiniz.</p>
+
+                <h2>Hesap Silme İşlemi</h2>
+                <p>Hesap silme işlemi NightLink mobil uygulaması içindeki:</p>
+                <p><strong>Profil → Ayarlar → Hesabı Sil</strong> adımlarıyla gerçekleştirilir.</p>
+
+                <h2>Silme Sonrası Durum</h2>
+                <ul>
+                    <li>Hesap silindikten sonra kullanıcı erişimi kapatılır ve uygulamaya giriş yapılamaz.</li>
+                    <li>30 gün boyunca tekrar giriş yaparak işlemi geri alabilirsiniz.</li>
+                    <li>30 gün sonunda hesap ve profil verileri kalıcı olarak silinir.</li>
+                </ul>
+
+                <h2>Veri Saklama</h2>
+                <p>Yasal yükümlülükler ve güvenlik amaçları nedeniyle IP ve şikayet kayıtları belirli süre boyunca saklanmaya devam edebilir.</p>
+
+                <h2>İletişim</h2>
+                <p>Hesap silme ile ilgili destek için:</p>
+                <p><strong>codeflaresoftware@gmail.com</strong></p>
+
+                <p style="margin-top: 3rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+                    © 2025 NightLink – Codeflare Software
+                </p>
+            </div>
+
+            <!-- English Content -->
+            <div id="english-content" class="content-section" style="display: none;">
+                <h1>Account Deletion and Data Deletion Request</h1>
+                <p>You can delete your account from the NightLink application at any time.</p>
+
+                <h2>Account Deletion Process</h2>
+                <p>Account deletion is performed through the following steps in the NightLink mobile application:</p>
+                <p><strong>Profile → Settings → Delete Account</strong></p>
+
+                <h2>Post-Deletion Status</h2>
+                <ul>
+                    <li>After account deletion, user access is closed and login to the application is not possible.</li>
+                    <li>You can reverse the process by logging in again for 30 days.</li>
+                    <li>After 30 days, account and profile data are permanently deleted.</li>
+                </ul>
+
+                <h2>Data Retention</h2>
+                <p>Due to legal obligations and security purposes, IP and complaint records may continue to be stored for a certain period.</p>
+
+                <h2>Contact</h2>
+                <p>For support regarding account deletion:</p>
+                <p><strong>codeflaresoftware@gmail.com</strong></p>
+
+                <p style="margin-top: 3rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+                    © 2025 NightLink – Codeflare Software
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-tr="© 2026 Codeflare Software. Tüm hakları saklıdır." data-en="© 2026 Codeflare Software. All rights reserved.">© 2026 Codeflare Software. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Dil değiştirme
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage') || 'tr';
+            changeLanguage(savedLanguage);
+            
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    changeLanguage(lang);
+                    toggleContent(lang);
+                });
+            });
+            
+            toggleContent(savedLanguage);
+        });
+        
+        function toggleContent(lang) {
+            const turkishContent = document.getElementById('turkish-content');
+            const englishContent = document.getElementById('english-content');
+            
+            if (lang === 'tr') {
+                turkishContent.style.display = 'block';
+                englishContent.style.display = 'none';
+            } else {
+                turkishContent.style.display = 'none';
+                englishContent.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

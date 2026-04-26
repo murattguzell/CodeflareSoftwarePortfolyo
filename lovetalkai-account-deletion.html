@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveTalkAI - Hesap Silme | Account Deletion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="profile_resim/codeflare_logo.png" alt="Codeflare Software" class="logo-image">
+                <span class="logo-text">Codeflare Software</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projeler</a></li>
+                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="legal-page">
+        <div class="legal-content">
+            <a href="project-detail.html?id=2" class="back-link">← <span data-tr="LoveTalkAI'ya Dön" data-en="Back to LoveTalkAI">LoveTalkAI'ya Dön</span></a>
+
+            <!-- Turkish -->
+            <div id="turkish-content" class="content-section">
+                <h1>Hesap Silme Talebi</h1>
+
+                <p>LoveTalk AI hesabınızı silmek için aşağıdaki e-posta adresine, hesabınıza bağlı e-posta adresiniz üzerinden talep göndermeniz gerekmektedir.</p>
+
+                <p><strong>codeflaresoftware@gmail.com</strong></p>
+
+                <p>E-posta başlığı: <strong>"Hesap Silme Talebi"</strong> olmalıdır.</p>
+
+                <h2>Önemli Bilgiler</h2>
+                <ul>
+                    <li>Güvenliğiniz için yalnızca hesabınıza kayıtlı e-posta adresinden gönderilen talepler işleme alınacaktır.</li>
+                    <li>Hesabınız silindiğinde tüm verileriniz (hesap bilgileriniz ve coin bakiyeniz dahil) kalıcı olarak silinir ve geri alınamaz.</li>
+                    <li>LoveTalk AI, kullanıcı mesajlarını saklamaz.</li>
+                    <li>Yasal yükümlülükler dışında hiçbir kişisel veriniz silme işleminden sonra saklanmaz.</li>
+                    <li>Talebiniz en geç <strong>7 gün</strong> içerisinde işleme alınacaktır.</li>
+                </ul>
+
+                <p style="margin-top: 3rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+                    © 2026 LoveTalkAI – Codeflare Software
+                </p>
+            </div>
+
+            <!-- English -->
+            <div id="english-content" class="content-section" style="display: none;">
+                <h1>Account Deletion Request</h1>
+
+                <p>To delete your LoveTalk AI account, you need to send a request from the email address associated with your account to the following address.</p>
+
+                <p><strong>codeflaresoftware@gmail.com</strong></p>
+
+                <p>Email subject must be: <strong>"Account Deletion Request"</strong></p>
+
+                <h2>Important Information</h2>
+                <ul>
+                    <li>For your security, only requests sent from the email address registered to your account will be processed.</li>
+                    <li>When your account is deleted, all your data (including your account information and coin balance) is permanently deleted and cannot be recovered.</li>
+                    <li>LoveTalk AI does not store user messages.</li>
+                    <li>No personal data will be retained after deletion except as required by legal obligations.</li>
+                    <li>Your request will be processed within <strong>7 days</strong> at the latest.</li>
+                </ul>
+
+                <p style="margin-top: 3rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+                    © 2026 LoveTalkAI – Codeflare Software
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 Codeflare Software. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage') || 'tr';
+            changeLanguage(savedLanguage);
+            toggleContent(savedLanguage);
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    changeLanguage(lang);
+                    toggleContent(lang);
+                });
+            });
+        });
+        function toggleContent(lang) {
+            document.getElementById('turkish-content').style.display = lang === 'tr' ? 'block' : 'none';
+            document.getElementById('english-content').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

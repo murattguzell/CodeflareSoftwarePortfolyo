@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (eğer gelecekte kullanılırsa)
+node_modules/
+npm-debug.log
+
+# Resim dosyaları (placeholder'lar)
+*.jpg
+*.jpeg
+*.png
+!profile.jpg.example
+!project1.jpg.example
+!project2.jpg.example
+!project3.jpg.example
