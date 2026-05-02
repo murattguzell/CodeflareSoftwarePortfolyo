@@ -107,6 +107,10 @@ function loadProjectDetail() {
                 <span class="btn-icon">🗑️</span>
                 <span>${t.accountDeletion}</span>
             </a>
+            <a href="nightlink-child-safety.html" target="_blank" class="btn btn-secondary">
+                <span class="btn-icon">🛡️</span>
+                <span>${t.childSafety}</span>
+            </a>
         `;
         nightlinkLinks.style.display = 'block';
     } else {
